@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS로 웹페이지 꾸미기</title>
+    <meta charset="utf-8">
+    <style>
+        strong {
+            color:black;
+        }
+        .css_strong{
+            color:black;
+        }
+        .html_strong{
+            color:brown;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <p>
+            해당 페이지는 html 1일차에 만든 노트를 가지고 CSS강의에서 다시 활용하고 있습니다.
+        </p>
+        <p>
+            <h1 style="font-size: 60px;">
+                CSS로 웹페이지 꾸미는 법
+            </h1>
+        </p>
+        <p>
+            head태그에 들어가는 style 태그는, body 에 있는 태그의 스타일을 변경해주는 역할을 한다.<br>
+            strong {color:rgb} 처럼 변경하고자하는 태그의 이름에 { }을 넣고 { }안에 효과를 부여해준다.<br>
+            위 예시에서, strong{ }은 style 태그를 통해 선택된 태그인 <strong class="css_strong">선택자(selector)</strong>라고 한다. 그리고 { }안에서 선택자에게 지정될 효과를 <strong class="css_strong">효과/선언(declaration)</strong> 이라고 한다.<br>
+            html의 언어에서는 font태그를 통해 바꿀 수도 있지만, style태그로는 원하고자 하는 태그를 한번에 처리해줄 수 있고, 덕분에 수정이 필요할 때 수정 소모 시간이 현저히 줄어든다.<br>
+            또한 코드의 수가 많아질수록, 접속인원이 늘어날수록 그에 따른 손해가 발생하기에, 코드의 수를 줄여 최대한 가볍게 만들기 위함이기도 하다.<br>
+        </p>
+        <p>
+            지역변수(해당 웹페이지에서만 작동하는 변수)을 주어서 같은 입력값을 각 페이지마다 다르게 표현해줄 수 있다.<br>
+            이러한 역할을 하는 것은 style 속성이다. style 속성은 지역변수를 주고 싶은 입력값이 해당한 태그에 style="color:red" 와 같은 형태로 넣어주면 된다.<br>
+            text-decoration: none 과 같은 효과는 텍스트에 붙는 장식(밑줄)이 없어지게 할 수 있고, 지역변수로써 작용하게 하려면, 속성으로써의 style="text-decoration:underline"와 같이 밑줄을 넣어주면 된다.<br>
+            css에서 ;을 넣어주는 의미는 각각의 효과가 시작되고 끝나는 것을 구별해주고 나눠주는 역할을 한다.<br>
+        </p>
+        <p>
+            텍스트의 크기를 더 키우거나 원하는 사이즈로 맞추고 싶을 때는, style태그에서는 font-size 효과를 사용하면 되고, style 속성에서도 같은 효과를 사용하면 된다.<br>
+            마찬가지로, 텍스트의 위치를 정렬(align)하기 위해서는, style 태그 혹은 style 속성에서 text-align 효과를 사용하면 된다.<br>
+        </p>
+        <p>
+            선택자에는 크게 id 선택자, class 선택자, 태그 선택자가 있다.<br> 
+            가장 구체적인 성격을 가진, <strong class="css_strong">id 선택자는</strong> 태그 안에서 <strong class="css_strong">id=" "로 지정</strong>해줄 수 있고, 정해진 id 값은 웹페이지 내에서 한번만 쓰기로 정해져 있다.<br> 
+            style태그 내에서 id 선택자를 지정하기 위해서는 <strong class="css_strong">id값 앞에 #을 붙여주면 된다.</strong><br>
+            id 선택자 다음으로 구체적인, <strong class="css_strong">class 선택자는</strong> 태그 안에서 <strong class="css_strong">class=" "로 지정</strong>해줄 수 있고, class안에는 여러개의 값을 넣어줄 수 있다.<br> 
+            style태그 내에서 class 선택자를 지정하기 위해서는 <strong class="css_strong">class값 앞에 .을 붙여주면 된다.</strong><br>
+            가장 포괄적인 성격을 가진, <strong class="css_strong">태그 선택자는</strong> 가장 큰 범주의 선택자로, <strong class="css_strong">태그 자체를 지정</strong>해주는 것이다.<br> 
+            style태그 내에서 태그 선택자를 지정하기 위해서는 <strong class="css_strong">태그값을 적어주면 된다.</strong><br>
+            위 세 개의 선택자들은 코드에 적히는 순서에 따라서 적용되기도, 안되기도 한다. 나중에 나오는 선택자 일수록, 더 큰 영향력을 가지게 되고, 구체적인 순서가 먼저 나올때마다 이후에 나올 포괄적인 선택자는 적용되지 않는다.<br>
+            쉽게 말해서, id 선택자가 먼저 코드 상에서 먼저 적용된다면, 이후에 id 선택자에 영향을 받는 class 선택자나 태그 선택자는 적용되지 않는 것이다.<br>
+        </p>
+        <p>
+            <a href="https://youtu.be/8-rCMmamtDE" target="_blank" title="여기까지 공부함">다음 일차에 계속...</a>
+        </p>
+    </p>
+    <p>
+        <p>
+            --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+        <p>
+            <h4 style="text-align:center;">
+                본 문장 아래부터는 CSS강의를 통해 배우고 실습해서 나온 결과물입니다. <br>
+                밑줄에 <u style="color:red">red</u>로 표시된 부분은 오탈자 혹은 오류와 같은 수정사항을 표시한겁니다.<br>
+                밑줄에 <u style="color:green">green</u>으로 표시된 부분은 적용 실패 밑 의문점을 표시한겁니다.
+            </h4>
+        </p>
+        <p>
+            --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </p>
+    <p>
+        <h1 style="font-size: 45px;">HTML 만드는 법</h1>
+        <p>
+            일단 html editor 을 찾는다. 나는 <u style="color:red;">VScode</u>를 사용<br>
+            먼저 폴더를 만들고, .html을 넣은 파일명으로 파일을 만들면 html을 만들 수 있는 코드창이 실행된다.<br>
+            실행창에 바로 입력하고 저장, 웹브라우저에서 해당 파일을 실행하면 바로 입력된 값 출력<br>
+            <strong class="html_strong">strong으로 입력값을 감싸면 입력값이 진하게 표시할 수 있다. (앞선 문장과 이 문장에 strong을 감쌌다)</strong><br>
+            u로 입력값을 감싸면 <u>이렇게</u> 입력값에 밑줄을 칠 수 있다.<strong class="html_strong">('이렇게'에 u를 감쌌다)</strong><br>
+            strong이나 u와 같은 것을 tag라고 한다. 시작하는 tag을 열리는 태그, 끝내는 tag을 닫히는 태그라고 하고, 닫히는 태그에는 슬래시(/)를 넣어서 구분한다.<br>
+            h1~h6이라는 태그로 제목처럼 만들 수 있다. h1~h6로 입력값을 감싸면, <strong class="html_strong">입력값이 진하게 표시되고, h 뒤 숫자가 커질수록, 글자 크기는 작아진다. 또한 줄바꿈까지 된다.</strong>
+        </p>
+        <p>
+            예)
+            <h1>h1로 쓴 글자</h1>
+            <h2>h2로 쓴 글자</h2>
+            <h3>h3로 쓴 글자</h3>
+            <h4>h4로 쓴 글자</h4>
+            <h5>h5로 쓴 글자</h5>
+            <h6>h6로 쓴 글자</h6>
+        </p>
+        <p style="margin-top: 50px;">
+            태그에는 150개 이상이 존재하고, 모든 태그를 알 수는 없다. 그래서 자주 사용되는 태그가 정리된 사이트가 있다.<br>
+            <h3><a href="http://www.advancedwebranking.com/html" target="_blank" title="태그 랭킹">www.advancedwebranking.com/html</a></h3>
+        </p>
+        <p>
+            새로운 줄을 추가할때는 br 태그를 사용한다. br태그는 닫히는 태그 없이 사용 가능하고, 한번에 여러개 사용해서 단락으로써 여백을 줄 수 있다.<br>
+            또한 p라는 태그를 이용해서 단락을 설정해줄 수 있다. p는 열리는 태그와 닫히는 태그가 존재하고, p태그로 감싼 입력값은 하나의 단락으로 정의된다.<br>
+            이렇게 정의된 단락이 코드 상의 정보를 주기 때문에 더 좋은 태그라고 할 수 있고, p태그를 사용하는 것은 권장한다.
+        </p>
+        <p>
+            br과 p 태그를 비교했을 때, br은 각 문장 뒤에 쉽게 쓸 수 있고 여러번 사용해서 여백을 더 줄 수도 있지만, p 태그는 전체문장을 하나의 단락으로 묶는 것이기에 자유도가 떨어진다.<br>
+            그래서 CSS 언어에서 그것을 보완할 수 있다. CSS에는 p와 p 사이에 여백을 주는 코드가 있는데, 새로운 p가 시작되는 태그 안에, style=을 적고, "margin-top:XXpx;"이라는 XX 픽셀만큼의 top 부분에 여백을 주는 코드를 넣어 주면 된다.<br>
+        </p>
+        <p> 
+            사진을 넣기 위해서는 img태그를 사용하면 된다.<br> 
+            img 태그에서 src=""을 입력하고 ""사이에 같은 폴더에 내의 이미지 이름과 파일명을 넣어주면 이미지를 넣을 수 있다.<br> 
+            <img src="image.jpg" width="400px"><br>이미지가 클때는 width=를 넣어서 퍼센트로 맞출수도, 픽셀에 맞춰 줄여줄 수 있다.<br>
+            src=와 width와 같은 부분을 attribute, 속성이라고 하고, 위치는 상관없다.
+        </p>
+        <p> 
+            목차를 만들고 사용할 때, li(list의 약자)라는 태그를 이용할 수 있다. li태그에는 부모객체인 ul이라는 태그가 있고, 이를 통해 구별된 항목으로 나눌때, 각각 다른 ul로 감싸주면 된다.<br>
+            예)
+                <ul>
+                    <li>1. python</li>
+                    <li>2. java</li>
+                    <li>3. html</li>
+                    <li>4. C++</li>
+                </ul>
+            ul태그로 목차를 만들게 되면, 앞 순위에 항목을 추가하게 되면, 항목 넘버를 모두 재조정해야 하기에, ol이라는 태그를 사용해 자동으로 넘버를 넣어주면 된다.<br>
+            예)
+            <ol>
+                <li>python</li>
+                <li>java</li>
+                <li>html</li>
+                <li>C++</li>
+            </ol>
+        </p>
+        <p>
+            title이란 태그를 통해 웹페이지 제목을 정해줄 수 있다. 이 제목은 사람들로 하여금 웹페이지의 표지의 제목과 같은 것이라고 할 수 있다.<br>
+            또한 meta라는 태그를 이용해 웹페이지의 성격을 정의해줄 수 있다. meta 태그 안에 charset=""을 적고, ""안에 utf-8을 넣어주면 한글을 모든 웹사이트에서 오류 없이 읽을 수 있게 해준다.<br>
+            위 title 태그와 meta 태그는 페이지에 대한 설명에 관한 태그로, head라는 태그로 감싸고, 그 아래 페이지 내 내용에 대한 태그들은 body라는 태그로 감싸준다. <br>
+            이 head태그와 body태그를 하나로 묶어 html이라는 태그로 감싸주고, 제일 상위에 관용적으로 !doctype html이라는 태그로 정의해준다.<br>
+        </p>
+        <p>
+            a태그는 a태그에 묶인 입력값이 다른 <a href="https://turn-on-and-dipping.tistory.com/" target="_blank" title="티스토리 링크">링크</a>로 이동할 수 있게끔 만들어주는 태그이다.<br>
+            a 태그에  href=""을 적고 ""안에 링크 주소를 넣어 a태그로 묶인 입력값을 눌렀을 때 링크 주소로 이동할 수 있고, target="_blank"를 넣어 새 탭을 열어 링크 주소로 이동할 수도 있다. 또한 title=""을 넣어 ""안의 내용을 입력값 위에 커서를 놓았을 때, ""안의 내용을 출력한다.<br>
+        </p>
+        <p>
+            동영상을 삽입하고자 할때는 , 유튜브의 경우, 공유 버튼의 퍼가기를 누르고, iframe태그를 복사해 붙여넣으면 된다.<br>
+            또한 만약 댓글기능을 추가하고 싶다면, <a href="https://blog.disqus.com/" target="_blank" title="댓글기능">disqus </a>라는 기능을 이용해 추가할 수 있다. <br>
+            댓글기능 추가에 관해서는 <a href="https://youtu.be/LVLHprUg-PM" target="_blank" title="유튜브 생활코딩">이 링크</a>나 아래 영상을 보고 따라하면 될 것이다. <br>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LVLHprUg-PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+            채팅기능 추가에 관해서는 아래 영상을 통해 확인할 수 있다.
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/K3cYoZ9AFOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+        </p>
+        <p style="text-align:center;">
+            <h3>
+                변경된 부분과 적용 문법
+            </h3>
+            <ul>
+                <li>
+                    strong태그의 색상 변경 : style 태그 사용 
+                </li>
+                <li>
+                    a 태그의 text-decoration: none 적용 : style 태그 사용
+                </li>
+                <li>
+                    h1 태그 중, "CSS로 웹페이지 꾸미는 법" 입력값이 속한 태그의 폰트 크기 변경 : style 속성+font-size 효과 사용<br>
+                    h1 태그 중, "HTML 만드는 법" 입력값이 속한 태그의 폰트 크기 변경 : style 속성+font-size 효과 사용
+                </li>
+                <li>
+                    h4 태그 중, "본 문장 아래부터는 (...)" 입력값이 속한 태그의 위치(align) 변경 : style 속성+text-align 효과 사용<br>
+                    p 태그 중, "HTML 설명노트로 돌아가기" 입력값이 속한 태그의 위치(align) 변경 : style 속성+text-align 효과 사용<br>
+                    <u style="color:green;">p 태그 중, "변경된 부분과 적용 문법" 입력값이 속한 태그와 그외 태그의 위치(align) 변경 시도(실패) : style 속성+text-align 효과 사용</u>
+                </li>
+                <li>
+                    vsc를 -> VScode를 : u태그 사용+style=color 효과를 사용
+                </li>
+                <li>
+                    img태그의 이미지 크기 변경 : 100%에서 400px로 변경
+                </li>
+            </ul>
+        </p>
+        <p style="text-align: center;">
+            <a href="HTML.html" style="text-decoration:underline;">HTML 설명노트로 돌아가기</a>
+        </p>
+    </p>
+</body>
+</html>
